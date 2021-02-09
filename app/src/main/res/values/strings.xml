@@ -9,4 +9,9 @@
     <string name="settings_menu_changeName">Изменить имя</string>
     <string name="settings_menu_changePhoto">Сменить фото профиля</string>
     <string name="settings_menu_exit">Выход</string>
+    <string name="register_enterPhone">Введите номер телефона</string>
+    <string name="register_phoneHint">+38 (000) 000–00–00</string>
+    <string name="register_text">Регистрация  Авторизация</string>
+    <string name="register_instruction">На указанный вами номер будет отправлено SMS сообщение с кодом подтверждения.</string>
+    <string name="register_nextButton">Продолжить</string>
 </resources>

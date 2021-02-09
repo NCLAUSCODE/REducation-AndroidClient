@@ -1,11 +1,12 @@
-package com.nclaus.code.reducation
+package com.nclaus.code.reducation.activities
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.nclaus.code.reducation.R
 import com.nclaus.code.reducation.databinding.ActivityMainBinding
-import com.nclaus.code.reducation.ui.fragments.SettingsFragment
+import com.nclaus.code.reducation.ui.fragments.EnterPhoneFragment
 import com.nclaus.code.reducation.ui.objects.AppDrawer
 
 class MainActivity : AppCompatActivity() {
@@ -36,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(mToolbar)
         mAppDriver.create()
         supportFragmentManager.beginTransaction()
-            .replace(R.id.dataContainer, SettingsFragment())
+            .replace(R.id.dataContainer, EnterPhoneFragment())
             .commit()
     }
 }

@@ -9,4 +9,6 @@
     <dimen name="marginVertical">16dp</dimen>
     <dimen name="defaultEventItemProgress">8dp</dimen>
     <dimen name="settings_rippleEffect_radius">4dp</dimen>
+    <dimen name="defaultPadding">16dp</dimen>
+    <dimen name="textVeryLarge">24sp</dimen>
 </resources>

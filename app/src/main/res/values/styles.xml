@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Light application theme. -->
     <style name="REducation.Light" parent="MaterialDrawerTheme.Light">
         <!-- Primary brand color. -->
@@ -98,5 +98,43 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">?attr/actionBarSize</item>
         <item name="android:background">@color/primary</item>
+    </style>
+
+    <style name="logo">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_marginTop">44dp</item>
+    </style>
+
+    <style name="textH1">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="divider">
+        <item name="android:layout_width">108dp</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="EditText" parent="textBig">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/marginVertical</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:importantForAutofill" tools:targetApi="o">no</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:paddingHorizontal" tools:targetApi="o">@dimen/defaultPadding</item>
+        <item name="android:paddingVertical" tools:targetApi="o">18dp</item>
+        <item name="android:textSize">@dimen/textVeryLarge</item>
     </style>
 </resources>
