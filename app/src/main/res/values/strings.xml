@@ -2,4 +2,11 @@
     <string name="app_name">REducation</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="defaultUsername">Матвеев Николай Валерьевич</string>
+    <string name="defaultFac">Факультет: КСИТ</string>
+    <string name="defaultCourse">Курс: 2</string>
+    <string name="defaultEventItemText">Информатика и вычислительная техника</string>
+    <string name="settings_menu_changeName">Изменить имя</string>
+    <string name="settings_menu_changePhoto">Сменить фото профиля</string>
+    <string name="settings_menu_exit">Выход</string>
 </resources>

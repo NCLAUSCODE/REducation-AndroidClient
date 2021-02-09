@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="settings_avatarSize">58dp</dimen>
+    <dimen name="settings_avatarBorder">2dp</dimen>
+    <dimen name="marginHorizontal">8dp</dimen>
+    <dimen name="textLarge">18sp</dimen>
+    <dimen name="textNormal">14sp</dimen>
+    <dimen name="settings_editButtonSize">24dp</dimen>
+    <dimen name="marginVertical">16dp</dimen>
+    <dimen name="defaultEventItemProgress">8dp</dimen>
+    <dimen name="settings_rippleEffect_radius">4dp</dimen>
+</resources>

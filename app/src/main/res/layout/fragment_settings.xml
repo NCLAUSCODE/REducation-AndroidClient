@@ -1,16 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.SettingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/textView"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Настройки" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_headerBlock"
+        style="@style/settings_headerBlock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/settings_userAvatar"
+            style="@style/settings_userAvatar"
+            android:src="@drawable/def_avatar"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="@dimen/settings_avatarBorder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/settings_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/settings_userAvatar"
+            tools:ignore="ContentDescription,MissingConstraints"
+            style="@style/settings_divider" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/textBig"
+            android:text="@string/defaultUsername"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/settings_divider"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_dirBlock"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_marginTop="@dimen/marginVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_headerBlock">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/settings_fac"
+            style="@style/textNormal"
+            android:text="@string/defaultFac"
+            app:layout_constraintEnd_toStartOf="@+id/settings_course"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/settings_course"
+            style="@style/textNormal"
+            android:text="@string/defaultCourse"
+            android:layout_marginEnd="@dimen/marginVertical"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_dataPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_dirBlock"
+        tools:ignore="MissingConstraints"
+        style="@style/dataPanel">
+
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            style="@style/dataPanel_progress" />
+
+        <TextView
+            android:id="@+id/settings_groupTitle"
+            style="@style/textBig"
+            android:layout_marginStart="@dimen/marginVertical"
+            android:layout_marginEnd="@dimen/marginVertical"
+            android:textColor="@color/colorAccent"
+            android:text="@string/defaultEventItemText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

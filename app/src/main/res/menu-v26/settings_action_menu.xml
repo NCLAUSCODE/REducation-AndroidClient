@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_action_menu"
+        app:iconTint="@color/colorAccent"
+        app:showAsAction="ifRoom"
+        android:title="">
+        <menu>
+            <item android:id="@+id/settings_menu_changeName"
+                android:title="@string/settings_menu_changeName"
+                android:icon="@drawable/ic_edit"
+                app:iconTint="@color/colorAccent"
+                app:showAsAction="never"
+                />
+            <item android:id="@+id/settings_menu_changePhoto"
+                android:title="@string/settings_menu_changePhoto"
+                android:icon="@drawable/ic_change_photo"
+                app:iconTint="@color/colorAccent"
+                app:showAsAction="never"
+                />
+            <item android:id="@+id/settings_menu_accountExit"
+                android:title="@string/settings_menu_exit"
+                android:icon="@drawable/ic_exit"
+                app:iconTint="@color/colorAccent"
+                app:showAsAction="never"
+                />
+        </menu>
+    </item>
+</menu>

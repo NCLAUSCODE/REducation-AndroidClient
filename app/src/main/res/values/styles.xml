@@ -6,6 +6,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorBackground">@color/white</item>
+        <item name="popupTheme">@style/actionMenu</item>
         <!-- MaterialDrawer specific values -->
         <item name="material_drawer_background">@color/material_drawer_background</item>
         <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
@@ -23,5 +24,79 @@
 
     <style name="REducation.Dark" parent="MaterialDrawerTheme">
 
+    </style>
+
+    <style name="actionMenu" parent="Theme.AppCompat.Light">
+        <item name="background">@color/white</item>
+        <item name="actionMenuTextColor">@color/colorAccent</item>
+    </style>
+
+    <style name="settings_headerBlock">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/marginHorizontal</item>
+        <item name="android:layout_marginStart">@dimen/marginHorizontal</item>
+        <item name="android:layout_marginTop">@dimen/marginVertical</item>
+    </style>
+
+    <style name="settings_userAvatar">
+        <item name="android:layout_width">@dimen/settings_avatarSize</item>
+        <item name="android:layout_height">@dimen/settings_avatarSize</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="textBig">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/marginHorizontal</item>
+        <item name="android:layout_marginEnd">@dimen/marginHorizontal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/textLarge</item>
+    </style>
+
+    <style name="settings_editButton">
+        <item name="android:layout_width">@dimen/settings_editButtonSize</item>
+        <item name="android:layout_height">@dimen/settings_editButtonSize</item>
+        <item name="android:layout_marginEnd">@dimen/marginHorizontal</item>
+        <item name="android:background">@drawable/ripple_effect</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="textNormal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/marginVertical</item>
+        <item name="android:layout_marginEnd">@dimen/marginVertical</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="dataPanel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="dataPanel_progress">
+        <item name="android:layout_width">@dimen/defaultEventItemProgress</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="settings_divider">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginStart">@dimen/marginHorizontal</item>
+    </style>
+
+    <style name="mainToolbar">
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/primary</item>
     </style>
 </resources>

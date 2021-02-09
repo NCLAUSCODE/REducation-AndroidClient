@@ -43,7 +43,7 @@ class AppDrawer(private val mainActivity: AppCompatActivity, private val toolbar
                     .withIdentifier(2)
                     .withIconTintingEnabled(true)
                     .withName("Редактировать профиль")
-                    .withIcon(R.drawable.ic_pencil)
+                    .withIcon(R.drawable.ic_edit)
                     .withSelectable(false)
             )
             .withOnDrawerItemClickListener(object : Drawer.OnDrawerItemClickListener {
