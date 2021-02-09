@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.EnterCodeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:id="@+id/register_sms_icon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_margin="@dimen/marginVertical"
+        android:src="@drawable/ic_sms_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/blue"
+        tools:ignore="ContentDescription" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/register_enterCodeText"
+        style="@style/textH1"
+        android:text="@string/register_EnterCode"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_sms_icon"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/register_enterCodeDescriptionText"
+        style="@style/textH1"
+        android:layout_marginHorizontal="@dimen/marginVertical"
+        android:text="@string/register_enterCodeDescription"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_enterCodeText"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/register_enterCode"
+        style="@style/EditText"
+        android:background="@color/white"
+        android:hint="@string/register_enterCodeHint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_enterCodeDescriptionText"
+        tools:ignore="MissingConstraints,TextFields" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

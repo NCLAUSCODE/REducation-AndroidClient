@@ -50,36 +50,40 @@
         android:hint="@string/register_phoneHint"
         android:importantForAutofill="no"
         android:textStyle="bold"
+        android:background="@color/white"
+        android:inputType="number"
+        android:maxLength="12"
+        android:textColorHint="@color/colorAccentLight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_phoneNumberText"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TextFields" />
 
     <TextView
         android:id="@+id/register_description"
         style="@style/textH1"
         android:layout_margin="32dp"
         android:text="@string/register_instruction"
-        android:textAlignment="textStart"
+        android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/extendedFloatingActionButton"
+        app:layout_constraintBottom_toTopOf="@+id/register_btn_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_phoneNumber"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/extendedFloatingActionButton"
-        android:layout_width="256dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="@dimen/marginVertical"
-        android:background="@drawable/action_button"
-        android:text="@string/register_nextButton"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/register_btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginVertical"
+        android:backgroundTint="@color/blue"
         android:textColor="@color/white"
-        android:textSize="14sp"
+        android:src="@drawable/ic_right_arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:borderWidth="0dp"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

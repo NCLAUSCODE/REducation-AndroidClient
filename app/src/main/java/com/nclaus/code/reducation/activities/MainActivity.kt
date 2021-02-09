@@ -1,12 +1,13 @@
 package com.nclaus.code.reducation.activities
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.nclaus.code.reducation.R
 import com.nclaus.code.reducation.databinding.ActivityMainBinding
-import com.nclaus.code.reducation.ui.fragments.EnterPhoneFragment
+import com.nclaus.code.reducation.ui.fragments.SettingsFragment
 import com.nclaus.code.reducation.ui.objects.AppDrawer
 
 class MainActivity : AppCompatActivity() {
@@ -34,10 +35,15 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("ResourceAsColor")
     private fun initFunc() {
-        setSupportActionBar(mToolbar)
-        mAppDriver.create()
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.dataContainer, EnterPhoneFragment())
-            .commit()
+        if (false) {
+            setSupportActionBar(mToolbar)
+            mAppDriver.create()
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.dataContainer, SettingsFragment())
+                .commit()
+        } else {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
